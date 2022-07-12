@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/dashjay/baize/pkg/config"
+	"github.com/btwiuse/baize/pkg/config"
 )
 
 func NewBazelServerCommand() *cobra.Command {

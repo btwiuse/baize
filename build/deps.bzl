@@ -1,4 +1,5 @@
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 
 GOPROXY = "https://goproxy.io"
 
@@ -11,11 +12,18 @@ def deps():
             "https://github.com/kubernetes/repo-infra/archive/v0.2.3.tar.gz",
         ],
     )
-    http_archive(
-        name = "io_bazel_rules_go",
-        sha256 = "03a99c32480fff238f229105d6bac3da8207c5a1e7101b5bed8e3d1fa3c05da0",
-        strip_prefix = "github.com/bazelbuild/rules_go@v0.29.0",
-        urls = ["{}/github.com/bazelbuild/rules_go/@v/v0.29.0.zip".format(GOPROXY)],
+    # http_archive(
+    #     name = "io_bazel_rules_go",
+    #     sha256 = "03a99c32480fff238f229105d6bac3da8207c5a1e7101b5bed8e3d1fa3c05da0",
+    #     strip_prefix = "github.com/bazelbuild/rules_go@v0.29.0",
+    #     urls = ["{}/github.com/bazelbuild/rules_go/@v/v0.29.0.zip".format(GOPROXY)],
+    # )
+    git_repository(
+	name = "io_bazel_rules_go",
+	commit = "b8fd0bb7a7c384eca8c9c179754cbf6644e67feb",
+	# branch = "master",
+	remote = "https://github.com/bazelbuild/rules_go.git",
+	# tag = "v0.32.0",
     )
 
     http_archive(

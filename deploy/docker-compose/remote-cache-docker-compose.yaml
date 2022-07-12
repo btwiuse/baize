@@ -12,7 +12,7 @@ services:
     volumes:
       - redis_data:/data
   remote-cache:
-    image: dashjay/remote-cache:${STABLE_DOCKER_TAG:-dev}
+    image: btwiuse/remote-cache:${STABLE_DOCKER_TAG:-dev}
     ports:
       - "8081:8081"
     volumes:

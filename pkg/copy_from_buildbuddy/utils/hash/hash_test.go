@@ -3,7 +3,7 @@ package hash_test
 import (
 	"testing"
 
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/hash"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/hash"
 	"github.com/stretchr/testify/assert"
 )
 

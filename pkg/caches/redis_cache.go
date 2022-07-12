@@ -10,16 +10,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dashjay/baize/pkg/utils/status"
+	"github.com/btwiuse/baize/pkg/utils/status"
 
-	"github.com/dashjay/baize/pkg/utils"
+	"github.com/btwiuse/baize/pkg/utils"
 
 	repb "github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2"
 	"github.com/go-redis/redis/v8"
 	"github.com/sirupsen/logrus"
 
-	"github.com/dashjay/baize/pkg/config"
-	"github.com/dashjay/baize/pkg/interfaces"
+	"github.com/btwiuse/baize/pkg/config"
+	"github.com/btwiuse/baize/pkg/interfaces"
 )
 
 const (

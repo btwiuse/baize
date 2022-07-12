@@ -1,9 +1,9 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
-    name = "go_default_library",
+    name = "hash",
     srcs = ["hash.go"],
-    importpath = "github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/hash",
+    importpath = "github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/hash",
     visibility = ["//visibility:public"],
 )
 
@@ -28,4 +28,13 @@ filegroup(
     srcs = [":package-srcs"],
     tags = ["automanaged"],
     visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "hash_test",
+    srcs = ["hash_test.go"],
+    deps = [
+        ":hash",
+        "@com_github_stretchr_testify//assert",
+    ],
 )

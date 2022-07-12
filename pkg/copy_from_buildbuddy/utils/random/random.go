@@ -1,7 +1,6 @@
 package random
 
 import (
-	"io"
 	"sync"
 	"time"
 

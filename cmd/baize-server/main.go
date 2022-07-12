@@ -7,8 +7,8 @@ import (
 
 	_ "net/http/pprof"
 
-	"github.com/dashjay/baize/pkg/baize"
-	"github.com/dashjay/baize/pkg/config"
+	"github.com/btwiuse/baize/pkg/baize"
+	"github.com/btwiuse/baize/pkg/config"
 )
 
 func NewBazelExecutorCommand() *cobra.Command {

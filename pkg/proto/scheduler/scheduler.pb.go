@@ -8,6 +8,9 @@ package scheduler
 
 import (
 	context "context"
+	reflect "reflect"
+	sync "sync"
+
 	v2 "github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2"
 	status "google.golang.org/genproto/googleapis/rpc/status"
 	grpc "google.golang.org/grpc"
@@ -15,8 +18,6 @@ import (
 	status1 "google.golang.org/grpc/status"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (

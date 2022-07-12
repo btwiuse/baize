@@ -1,14 +1,14 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
-    name = "go_default_library",
+    name = "status",
     srcs = ["status.go"],
-    importpath = "github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/status",
+    importpath = "github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/status",
     visibility = ["//visibility:public"],
     deps = [
-        "@com_github_pkg_errors//:go_default_library",
-        "@org_golang_google_grpc//codes:go_default_library",
-        "@org_golang_google_grpc//status:go_default_library",
+        "@com_github_pkg_errors//:errors",
+        "@org_golang_google_grpc//codes",
+        "@org_golang_google_grpc//status",
     ],
 )
 
@@ -34,4 +34,14 @@ filegroup(
     srcs = [":package-srcs"],
     tags = ["automanaged"],
     visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "status_test",
+    srcs = ["status_test.go"],
+    deps = [
+        ":status",
+        "@com_github_pkg_errors//:errors",
+        "@com_github_stretchr_testify//assert",
+    ],
 )

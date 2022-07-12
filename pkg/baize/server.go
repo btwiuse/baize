@@ -5,9 +5,9 @@ import (
 	"math"
 	"net"
 
-	"github.com/dashjay/baize/pkg/caches"
-	"github.com/dashjay/baize/pkg/config"
-	"github.com/dashjay/baize/pkg/interfaces"
+	"github.com/btwiuse/baize/pkg/caches"
+	"github.com/btwiuse/baize/pkg/config"
+	"github.com/btwiuse/baize/pkg/interfaces"
 
 	repb "github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2"
 	"github.com/bazelbuild/remote-apis/build/bazel/semver"

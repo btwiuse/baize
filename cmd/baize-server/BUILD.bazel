@@ -1,21 +1,20 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_library(
-    name = "go_default_library",
+    name = "baize-server_lib",
     srcs = ["main.go"],
-    importpath = "github.com/dashjay/baize/cmd/baize-server",
+    importpath = "github.com/btwiuse/baize/cmd/baize-server",
     visibility = ["//visibility:private"],
     deps = [
-        "//pkg/baize:go_default_library",
-        "//pkg/config:go_default_library",
-        "@com_github_spf13_cobra//:go_default_library",
-        "@io_k8s_kubernetes//pkg/util/rlimit:go_default_library",
+        "//pkg/baize",
+        "//pkg/config",
+        "@com_github_spf13_cobra//:cobra",
     ],
 )
 
 go_binary(
     name = "baize-server",
-    embed = [":go_default_library"],
+    embed = [":baize-server_lib"],
     visibility = ["//visibility:public"],
 )
 

@@ -3,7 +3,7 @@ package lru_test
 import (
 	"testing"
 
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/lru"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/lru"
 	"github.com/stretchr/testify/require"
 )
 

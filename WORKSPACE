@@ -1,6 +1,6 @@
 # gazelle:repository_macro build/repos.bzl%go_repositories
 # gazelle:repo bazel_gazelle
-workspace(name = "com_github_dashjay_baize")
+workspace(name = "com_github_btwiuse_baize")
 
 load("//build:deps.bzl", "deps")
 
@@ -14,7 +14,7 @@ all_go_repositories()
 
 go_rules_dependencies()
 
-go_register_toolchains(version = "1.19.rc1")
+go_register_toolchains(version = "1.19rc1")
 
 gazelle_dependencies()
 

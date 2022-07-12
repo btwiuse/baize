@@ -1,4 +1,4 @@
-module github.com/dashjay/baize
+module github.com/btwiuse/baize
 
 go 1.19
 

@@ -5,8 +5,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/dashjay/baize/pkg/interfaces"
-	"github.com/dashjay/baize/pkg/utils/status"
+	"github.com/btwiuse/baize/pkg/interfaces"
+	"github.com/btwiuse/baize/pkg/utils/status"
 
 	"google.golang.org/protobuf/proto"
 
