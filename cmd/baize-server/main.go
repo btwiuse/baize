@@ -4,7 +4,6 @@ import (
 	"net/http"
 
 	"github.com/spf13/cobra"
-	"k8s.io/kubernetes/pkg/util/rlimit"
 
 	_ "net/http/pprof"
 
@@ -12,12 +11,6 @@ import (
 	"github.com/dashjay/baize/pkg/config"
 )
 
-func init() {
-	err := rlimit.SetNumFiles(4096)
-	if err != nil {
-		panic(err)
-	}
-}
 func NewBazelExecutorCommand() *cobra.Command {
 	cmd := &cobra.Command{}
 	cfgPath := cmd.Flags().String("config", "/config.toml", "config file to use")

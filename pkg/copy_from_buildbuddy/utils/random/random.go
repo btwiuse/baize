@@ -13,14 +13,6 @@ import (
 
 var once sync.Once
 
-func init() {
-	// Check that rand is working -- bail if not.
-	buf := make([]byte, 1)
-	if _, err := io.ReadFull(crand.Reader, buf); err != nil {
-		logrus.Fatalf("crypto/rand is unavailable: %s", err)
-	}
-}
-
 func RandUint64() uint64 {
 	once.Do(func() {
 		mrand.Seed(time.Now().UnixNano())
