@@ -1,3 +1,4 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 load("@bazel_gazelle//:def.bzl", "gazelle")
 
 # gazelle:resolve proto build/bazel/remote/execution/v2/remote_execution.proto @com_github_bazelbuild_remote_apis//build/bazel/remote/execution/v2:remote_execution_proto
@@ -48,5 +49,23 @@ filegroup(
         "//third_party:all-srcs",
     ],
     tags = ["automanaged"],
+    visibility = ["//visibility:public"],
+)
+
+go_library(
+    name = "baize_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/btwiuse/baize",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//pkg/baize",
+        "//pkg/config",
+        "@com_github_spf13_cobra//:cobra",
+    ],
+)
+
+go_binary(
+    name = "baize",
+    embed = [":baize_lib"],
     visibility = ["//visibility:public"],
 )

@@ -17,3 +17,5 @@ gazelle:             ## auto generate BUILD.bazel files from go.mod
 	@ $(BAZEL) run //:gazelle -- update-repos --from_file=go.mod
 	@ $(BAZEL) run //:gazelle
 
+build:               ## build baize
+	@ go build -v .
