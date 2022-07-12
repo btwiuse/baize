@@ -1,4 +1,4 @@
-FROM golang:1.17 AS build
+FROM golang:1.19rc1 AS build
 
 WORKDIR /go/baize-executor
 
