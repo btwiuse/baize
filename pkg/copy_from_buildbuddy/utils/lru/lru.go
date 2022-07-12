@@ -5,13 +5,13 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/dashjay/baize/pkg/interfaces"
+	"github.com/btwiuse/baize/pkg/interfaces"
 
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/hash"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/hash"
 	"github.com/sirupsen/logrus"
 
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/status"
 	xxhash "github.com/cespare/xxhash/v2"
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/status"
 )
 
 // EvictedCallback is used to get a callback when a cache Entry is evicted

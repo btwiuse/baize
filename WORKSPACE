@@ -1,6 +1,6 @@
 # gazelle:repository_macro build/repos.bzl%go_repositories
 # gazelle:repo bazel_gazelle
-workspace(name = "com_github_dashjay_baize")
+workspace(name = "com_github_btwiuse_baize")
 
 load("//build:deps.bzl", "deps")
 

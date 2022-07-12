@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/dashjay/baize/pkg/proto/scheduler;scheduler";
+option go_package = "github.com/btwiuse/baize/pkg/proto/scheduler;scheduler";
 
 import "google/rpc/status.proto";
 import "build/bazel/remote/execution/v2/remote_execution.proto";

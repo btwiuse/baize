@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/random"
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/status"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/random"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/status"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
 )

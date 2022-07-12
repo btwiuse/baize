@@ -15,7 +15,7 @@ proto_library(
 go_proto_library(
     name = "scheduler_go_proto",
     compilers = ["@io_bazel_rules_go//proto:go_grpc"],
-    importpath = "github.com/dashjay/baize/pkg/proto/scheduler",
+    importpath = "github.com/btwiuse/baize/pkg/proto/scheduler",
     proto = ":scheduler_proto",
     visibility = ["//visibility:public"],
     deps = [
@@ -25,9 +25,9 @@ go_proto_library(
 )
 
 go_library(
-    name = "go_default_library",
+    name = "scheduler",
     embed = [":scheduler_go_proto"],
-    importpath = "github.com/dashjay/baize/pkg/proto/scheduler",
+    importpath = "github.com/btwiuse/baize/pkg/proto/scheduler",
     visibility = ["//visibility:public"],
 )
 

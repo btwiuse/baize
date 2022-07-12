@@ -1,4 +1,4 @@
-go_prefix = "github.com/dashjay/baize"
+go_prefix = "github.com/btwiuse/baize"
 
 _BUILDIFIER = "@com_github_bazelbuild_buildtools//buildifier"
 
@@ -59,7 +59,7 @@ genrule(
     outs = ["proto-outs"],
     cmd = """for p in $(locations :all-protos)
 do
-    mkdir -p $@/github.com/dashjay/baize && \
+    mkdir -p $@/github.com/btwiuse/baize && \
     rp=$$(realpath $$p) && \
     cp -rf $${rp%.a}_/* $@/
 done""",

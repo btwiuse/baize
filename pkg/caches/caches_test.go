@@ -9,9 +9,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/dashjay/baize/pkg/config"
-	"github.com/dashjay/baize/pkg/interfaces"
-	"github.com/dashjay/baize/pkg/utils"
+	"github.com/btwiuse/baize/pkg/config"
+	"github.com/btwiuse/baize/pkg/interfaces"
+	"github.com/btwiuse/baize/pkg/utils"
 )
 
 const defaultRandomBytesSize = 200

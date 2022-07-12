@@ -12,7 +12,7 @@ $set_workspace_env
 
 cd "$rootDir"
 
-docker build -t dashjay/ubuntu:executor-base . -f base.Dockerfile
-docker build -t dashjay/baize-executor:"${STABLE_DOCKER_TAG}" . -f executor.Dockerfile
-docker build -t dashjay/baize-server:"${STABLE_DOCKER_TAG}" . -f server.Dockerfile
-docker build -t dashjay/remote-cache:"${STABLE_DOCKER_TAG}" . -f remote-cache.Dockerfile
+docker build -t btwiuse/ubuntu:executor-base . -f base.Dockerfile
+docker build -t btwiuse/baize-executor:"${STABLE_DOCKER_TAG}" . -f executor.Dockerfile
+docker build -t btwiuse/baize-server:"${STABLE_DOCKER_TAG}" . -f server.Dockerfile
+docker build -t btwiuse/remote-cache:"${STABLE_DOCKER_TAG}" . -f remote-cache.Dockerfile

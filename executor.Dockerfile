@@ -15,7 +15,7 @@ COPY ./cmd /go/baize-executor/cmd
 
 RUN go build -o /opt/baize-executor cmd/baize-executor/main.go
 
-FROM dashjay/ubuntu:executor-base
+FROM btwiuse/ubuntu:executor-base
 
 COPY --from=build /opt/baize-executor /usr/local/bin/baize-executor
 

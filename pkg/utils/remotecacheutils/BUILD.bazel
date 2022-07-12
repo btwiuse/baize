@@ -1,19 +1,19 @@
 load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 
 go_library(
-    name = "go_default_library",
+    name = "remotecacheutils",
     srcs = ["url_utils.go"],
-    importpath = "github.com/dashjay/baize/pkg/utils/remotecacheutils",
+    importpath = "github.com/btwiuse/baize/pkg/utils/remotecacheutils",
     visibility = ["//visibility:public"],
 )
 
 go_test(
-    name = "go_default_test",
+    name = "remotecacheutils_test",
     srcs = ["suite_test.go"],
-    embed = [":go_default_library"],
+    embed = [":remotecacheutils"],
     deps = [
-        "@com_github_onsi_ginkgo//:go_default_library",
-        "@com_github_onsi_gomega//:go_default_library",
+        "@com_github_onsi_ginkgo//:ginkgo",
+        "@com_github_onsi_gomega//:gomega",
     ],
 )
 

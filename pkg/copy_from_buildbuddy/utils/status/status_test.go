@@ -3,7 +3,7 @@ package status_test
 import (
 	"testing"
 
-	"github.com/dashjay/baize/pkg/copy_from_buildbuddy/utils/status"
+	"github.com/btwiuse/baize/pkg/copy_from_buildbuddy/utils/status"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )
