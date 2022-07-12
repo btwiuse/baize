@@ -13,20 +13,12 @@ import (
 	repb "github.com/bazelbuild/remote-apis/build/bazel/remote/execution/v2"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"k8s.io/kubernetes/pkg/util/rlimit"
 
 	"github.com/dashjay/baize/pkg/caches"
 	"github.com/dashjay/baize/pkg/config"
 	"github.com/dashjay/baize/pkg/interfaces"
 	rc "github.com/dashjay/baize/pkg/utils/remotecacheutils"
 )
-
-func init() {
-	err := rlimit.SetNumFiles(4096)
-	if err != nil {
-		panic(err)
-	}
-}
 
 const (
 	ac  = "ac"

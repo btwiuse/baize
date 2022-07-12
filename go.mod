@@ -1,6 +1,6 @@
 module github.com/dashjay/baize
 
-go 1.17
+go 1.19
 
 require (
 	github.com/BurntSushi/toml v1.0.0
@@ -20,7 +20,6 @@ require (
 	google.golang.org/genproto v0.0.0-20220211171837-173942840c17
 	google.golang.org/grpc v1.44.0
 	google.golang.org/protobuf v1.27.1
-	k8s.io/kubernetes v1.23.3
 )
 
 require (
@@ -28,40 +27,15 @@ require (
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/kr/text v0.2.0 // indirect
+	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/net v0.0.0-20211209124913-491a49abca63 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
-)
-
-replace (
-	k8s.io/api => k8s.io/api v0.19.6
-	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.19.6
-	k8s.io/apimachinery => k8s.io/apimachinery v0.19.6
-	k8s.io/apiserver => k8s.io/apiserver v0.19.6
-	k8s.io/cli-runtime => k8s.io/cli-runtime v0.19.6
-	k8s.io/client-go => k8s.io/client-go v0.19.6
-	k8s.io/cloud-provider => k8s.io/cloud-provider v0.19.6
-	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.19.6
-	k8s.io/code-generator => k8s.io/code-generator v0.19.6
-	k8s.io/component-base => k8s.io/component-base v0.19.6
-	k8s.io/component-helpers => k8s.io/component-helpers v0.23.3
-	k8s.io/controller-manager => k8s.io/controller-manager v0.19.6
-	k8s.io/cri-api => k8s.io/cri-api v0.19.6
-	k8s.io/csi-translation-lib => k8s.io/csi-translation-lib v0.19.6
-	k8s.io/kube-aggregator => k8s.io/kube-aggregator v0.19.6
-	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.19.6
-	k8s.io/kube-proxy => k8s.io/kube-proxy v0.19.6
-	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.19.6
-	k8s.io/kubectl => k8s.io/kubectl v0.19.6
-	k8s.io/kubelet => k8s.io/kubelet v0.19.6
-	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.19.6
-	k8s.io/metrics => k8s.io/metrics v0.19.6
-	k8s.io/mount-utils => k8s.io/mount-utils v0.23.3
-	k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.23.3
-	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.19.6
 )
