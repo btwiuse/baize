@@ -21,7 +21,7 @@ require (
 	google.golang.org/genproto/googleapis/bytestream v0.0.0-20240116215550-a9fa1716bcac
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240116215550-a9fa1716bcac
 	google.golang.org/grpc v1.60.1
-	google.golang.org/protobuf v1.32.0
+	google.golang.org/protobuf v1.33.0
 )
 
 require (
